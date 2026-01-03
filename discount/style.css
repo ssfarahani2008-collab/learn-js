@@ -1,0 +1,12 @@
+.discountForm{
+    background-color: antiquewhite;
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-transform: capitalize;
+}
+.discountCode{
+    font-size: 2rem;
+}
