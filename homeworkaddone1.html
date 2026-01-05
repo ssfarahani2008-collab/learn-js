@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iranian foods🍲</title>
+    <style>
+      body {
+        background:  linear-gradient(90deg, rgb(115, 252, 168) 0%, rgb(139, 102, 241) 100%);
+        
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid rgb(204, 54, 204);
+        background: rgb(250, 243, 243);
+        font-size: 20px;
+        border-radius: 6px;
+        padding: 10px 15px;
+        transition: all 120ms ease-in-out;
+      }
+
+      button:hover {
+        background: rgb(204, 54, 204);
+        cursor: pointer;
+      }
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background: #b8f7d4;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      footer {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 18px;
+      }
+
+      .theme-button {
+        font-size: 15px;
+        
+background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+
+        color: white;
+        padding: 5 8px;
+        border: none;
+      }
+
+      .theme-button:hover {
+        color: black;
+        
+background: linear-gradient(111.5deg, rgb(228, 247, 255) 21.9%, rgb(255, 216, 194) 92.2%);
+
+      }
+
+      .foods-iranian-picture {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .foods-iranian-picture:hover {
+        filter: contrast(80%);
+        transform: scale(1.1);
+      }
+
+      .grid {
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+      }
+
+      .grid img {
+        width: 100%;
+        border-radius: 8px;
+        transition: all 150ms ease-in-out;
+        height: 100px;
+      }
+
+      .grid img:hover {
+        transform: scale(2);
+      }
+
+  
+
+      .darkBody .container {
+        background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+      }
+      .darkBody{
+        background-color:white;
+background-image:
+radial-gradient(midnightblue 9px, transparent 10px),
+repeating-radial-gradient(midnightblue 0, midnightblue 4px, transparent 5px, transparent 20px, midnightblue 21px, midnightblue 25px, transparent 26px, transparent 50px);
+background-size: 30px 30px, 90px 90px;
+background-position: 0 0;
+      }
+    
+
+      .dark a {
+        color: rgb(204, 54, 204);
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-button">Change theme</button>
+    <div class="container">
+      <h1>Delicious Iranian food</h1>
+      <h2> 😋 My favorite foods 😋</h2>
+      <a href="https://en.wikipedia.org/wiki/Salsa_(dance)" target="_blank">
+        <img
+          src="https://tasteiran.net/Files/vegetarian-iranian-tahchin-dish-923eca.jpg"
+          alt=""
+          class="foods-iranian-picture"
+        />
+      </a>
+      <div class="grid">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9GzEJufOVfAMI0jg0BlEmWlfjnthlFQYYmQ&s"
+          alt=""
+        />
+        <img
+          src="https://www.cyruscrafts.com/img/cms/blog/iran-foods/iran-foods.webp"
+          alt=""
+        />
+        <img
+          src="https://mirito.ir/wp-content/uploads/2024/05/pirashki-gharch-esfenaj.jpg"
+          alt=""
+        />
+        <img
+          src="https://saas-behtarino.hs3.ir/media/business_products_images/default194186.jpg"
+          alt=""
+        />
+      </div>
+      <p>
+        Iranian cuisine includes various types of regional and traditional cuisines that are native to the Iranian plateau. Considering the range of diversity in the type of soil, climate, culture of ethnic groups and employment, there is a significant difference between different types of Iranian cuisine, each of which uses spices, vegetables, vegetables and local fruits available to them.Iranian cuisine is related to other food cultures around it, such as Indian cuisine, Middle Eastern cuisine, Arabic cuisine, Turkish cuisine, and Central Asian cuisine, and as a result of this country's interactions with other societies, it is still evolving.Despite the influence of cooking methods of the Arab world and the subcontinent, but Iranian cooking is largely a product of geography and food products inside Iran. In the west, Iranian cuisine is also called Persian cuisine, which has been spread in the west due to the historical name of Iran.
+        <br /><br />
+        📖
+        <a href="https://en.wikipedia.org/wiki/Iranian_cuisine">
+          <strong> Read on Wikipedia </strong>
+        </a>
+      </p>
+    </div>
+    <footer>
+      Coded with ❤️ by
+      <a href="#" target="_blank">sara _ farahani</a>
+    </footer>
+
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+
+
+        if (body.classList.contains("darkBody")) {
+          body.classList.remove("darkBody");
+          
+        } else {
+          body.classList.add("darkBody");
+        }
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
